@@ -66,6 +66,8 @@ public class Tienda {
                 System.out.println("El cliente se fue al hospital despues de 10 intentos");
             }
         } else {
+            cliente.setNumIntento(0);
+            this.setTiendaLlena(true);
             venderRTX5090();
             Thread.sleep(1000);
         }
@@ -85,7 +87,7 @@ public class Tienda {
             System.out.println("Se ha vendido la RTX5090 con " + copiaTarjetas.get(0));
             copiaTarjetas.remove(0);
             this.setListaRTX(copiaTarjetas);
-            this.setTiendaLlena(true);
+            this.setTiendaLlena(false);
             notifyAll();
         } else {
             System.out.println("No quedan mas RTX5090");

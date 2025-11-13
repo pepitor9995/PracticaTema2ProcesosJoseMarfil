@@ -45,7 +45,6 @@ public class Clientes implements Runnable {
         try {
             for (int i = 0; i < 300; i++) {
                 this.getTienda().entrarTienda(this);
-                this.getTienda().setTiendaLlena(false);
             }
         } catch (InterruptedException e) {
             e.printStackTrace();
