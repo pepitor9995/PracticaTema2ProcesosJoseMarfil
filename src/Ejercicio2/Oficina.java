@@ -1,19 +1,19 @@
 package Ejercicio2;
 
-public class Oficcina implements Runnable {
+public class Oficina implements Runnable {
     // ? atributo para poder agregar paquetes nuevos al almacen
     private Almacen almacen;
 
     // ? contructores por defecto, parametro y copia(superficial)
-    public Oficcina() {
+    public Oficina() {
         this.almacen = new Almacen();
     }
 
-    public Oficcina(Almacen almacen) {
+    public Oficina(Almacen almacen) {
         this.setAlmacen(almacen);
     }
 
-    public Oficcina(Oficcina oficcina) {
+    public Oficina(Oficina oficcina) {
         this.setAlmacen(oficcina.getAlmacen());
     }
 

@@ -15,7 +15,7 @@ public class Main {
         System.out.println(pepe.toString());
 
         Reparto pepeReparto = new Reparto(pepe);
-        Oficcina pepeOficcina = new Oficcina(pepe);
+        Oficina pepeOficcina = new Oficina(pepe);
 
         Thread hiloReparto = new Thread(pepeReparto);
         Thread hiloOficina = new Thread(pepeOficcina);
